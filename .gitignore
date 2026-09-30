@@ -1,0 +1,15 @@
+# Dossier de compilation (très lourd)
+/target/
+
+# Fichiers de debug Windows
+*.pdb
+
+# Sauvegardes de rustfmt
+**/*.rs.bk
+
+# Éditeurs et système
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

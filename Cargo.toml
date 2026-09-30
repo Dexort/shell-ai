@@ -1,0 +1,17 @@
+[package]
+name = "shell-ia"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.29"
+serde_json = "1"
+ureq = { version = "2", features = ["json"] }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.59", features = ["Win32_Globalization"] }
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
